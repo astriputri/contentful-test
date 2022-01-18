@@ -54,9 +54,6 @@ typings/
 # Yarn integrity file
 .yarn-integrity
 
-# dotenv environment variables file
-.env*
-
 # Gatsby build folder
 public
 

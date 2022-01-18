@@ -7,17 +7,27 @@ const Navigation = () => (
   <nav role="navigation" className={styles.container} aria-label="Main">
     <Link to="/" className={styles.logoLink}>
       <span className={styles.logo} />
-      <span className={styles.navigationItem}>Gatsby Starter Contentful</span>
+      <span className={styles.navigationItem}>Contentful</span>
     </Link>
     <ul className={styles.navigation}>
+      {/*<li className={styles.navigationItem}>*/}
+        {/*<Link to="/" activeClassName="active">*/}
+          {/*Home*/}
+        {/*</Link>*/}
+      {/*</li>*/}
+      {/*<li className={styles.navigationItem}>*/}
+        {/*<Link to="/blog/" activeClassName="active">*/}
+          {/*Blog*/}
+        {/*</Link>*/}
+      {/*</li>*/}
       <li className={styles.navigationItem}>
-        <Link to="/" activeClassName="active">
-          Home
+        <Link to="/" state={{ lang: "en" }} activeClassName="active">
+          EN
         </Link>
       </li>
       <li className={styles.navigationItem}>
-        <Link to="/blog/" activeClassName="active">
-          Blog
+        <Link to="/" state={{ lang: "ch" }} activeClassName="active">
+          CH
         </Link>
       </li>
     </ul>

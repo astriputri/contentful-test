@@ -40,26 +40,26 @@ class BlogPostTemplate extends React.Component {
               }}
             />
             <Tags tags={post.tags} />
-            {(previous || next) && (
-              <nav>
-                <ul className={styles.articleNavigation}>
-                  {previous && (
-                    <li>
-                      <Link to={`/blog/${previous.slug}`} rel="prev">
-                        ← {previous.title}
-                      </Link>
-                    </li>
-                  )}
-                  {next && (
-                    <li>
-                      <Link to={`/blog/${next.slug}`} rel="next">
-                        {next.title} →
-                      </Link>
-                    </li>
-                  )}
-                </ul>
-              </nav>
-            )}
+            {/*{(previous || next) && (*/}
+              {/*<nav>*/}
+                {/*<ul className={styles.articleNavigation}>*/}
+                  {/*{previous && (*/}
+                    {/*<li>*/}
+                      {/*<Link to={`/blog/${previous.slug}`} rel="prev">*/}
+                        {/*← {previous.title}*/}
+                      {/*</Link>*/}
+                    {/*</li>*/}
+                  {/*)}*/}
+                  {/*{next && (*/}
+                    {/*<li>*/}
+                      {/*<Link to={`/blog/${next.slug}`} rel="next">*/}
+                        {/*{next.title} →*/}
+                      {/*</Link>*/}
+                    {/*</li>*/}
+                  {/*)}*/}
+                {/*</ul>*/}
+              {/*</nav>*/}
+            {/*)}*/}
           </div>
         </div>
       </Layout>
